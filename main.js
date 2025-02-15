@@ -5,6 +5,9 @@ const path = require("path");
 let mainWindow;
 let djangoProcess;
 
+app.commandLine.appendSwitch("disable-features", "AutofillServerCommunication");
+
+
 function createWindow() {
   mainWindow = new BrowserWindow({
     width: 1200,
